@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cnguyen.myapplication.MainActivity">
+    <item
+        android:id="@+id/change_language"
+        android:title="Change Language"
+        app:showAsAction="always" />
+</menu>

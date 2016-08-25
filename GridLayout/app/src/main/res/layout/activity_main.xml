@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cnguyen.gridlayout.MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="Do you&#10;speak English?"
+            android:id="@+id/doyouspeakenglish"
+            android:tag="doyouspeakenglish"
+            android:onClick="playPhrase"
+            android:textAllCaps="false"
+            android:nestedScrollingEnabled="true" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="Good evening!"
+            android:id="@+id/goodevening"
+            android:tag="goodevening"
+            android:onClick="playPhrase"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="Hello!"
+            android:id="@+id/hello"
+            android:tag="hello"
+            android:onClick="playPhrase"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="How are you?"
+            android:id="@+id/howareyou"
+            android:tag="howareyou"
+            android:onClick="playPhrase"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="I live in ..."
+            android:id="@+id/ilivein"
+            android:tag="doyouspeakenglish5"
+            android:onClick="playPhrase"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="My name is ..."
+            android:id="@+id/mynameis"
+            android:tag="mynameis"
+            android:onClick="playPhrase"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="Please"
+            android:id="@+id/please"
+            android:tag="please"
+            android:onClick="playPhrase"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:text="Welcome!"
+            android:id="@+id/welcome"
+            android:tag="welcome"
+            android:onClick="playPhrase"
+            android:textAllCaps="false"/>
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/volumeSeekBar"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trackSeekbar"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+    </GridLayout>
+</RelativeLayout>
